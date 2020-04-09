@@ -1,0 +1,13 @@
+[package]
+name = "minimal_thread_local_example"
+version = "0.1.0"
+edition = "2018"
+
+
+[dependencies]
+has_thread_local = {path ="./has_thread_local"}
+libloading = "0.5"
+
+
+[workspace]
+members = ["shared_library","has_thread_local"]
